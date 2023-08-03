@@ -34,5 +34,9 @@ gst-launch-1.0 filesrc location=D:/projects/gstreamer/HyundaiCon_videos/YUN_0006
 # autovideosink: The autovideosink element is an element that automatically selects and uses an appropriate video sink based on the available environment and platform. In your case, it is likely using a default video sink suitable for your system, such as Direct3D on Windows or X11 on Linux. The video sink is responsible for displaying the decoded video frames on the screen.
 
 
+# filesrc webcam 
+# ref tutorial: https://www.youtube.com/watch?v=RA_coHkCdwg&list=PLfFan4sDonOccKApSxnb8mZyUS3CLxSMF&index=2
+
+
 
 
