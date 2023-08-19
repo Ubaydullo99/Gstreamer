@@ -25,7 +25,7 @@ gst-inspect-1.0
 # https://www.youtube.com/playlist?list=PLfFan4sDonOccKApSxnb8mZyUS3CLxSMF
 
 # filesrc .mp4 example 
-gst-launch-1.0 filesrc location=D:/projects/gstreamer/HyundaiCon_videos/YUN_0006.MP4 ! qtdemux ! h264parse ! avdec_h264 ! autovideosink
+    gst-launch-1.0 filesrc location=D:/projects/gstreamer/HyundaiCon_videos/YUN_0006.MP4 ! qtdemux ! h264parse ! avdec_h264 ! autovideosink
 # the pipeline qtdemux ! h264parse ! avdec_h264 ! autovideosink reads the video file in MP4 format, extracts the H.264 video stream, decodes it using the H.264 decoder, and displays the video frames on the screen using an appropriate video sink. The pipeline assumes that the video file is in H.264 format inside an MP4 container, and it processes it for rendering on your screen
 
 # qtdemux: This element is responsible for demuxing (extracting) multimedia data from the MP4 container format (also known as QuickTime or MOV format). The MP4 format can contain multiple streams, such as video, audio, and subtitles, and qtdemux separates these streams and sends them to their respective downstream elements for further processing.
